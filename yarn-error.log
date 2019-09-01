@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/Cellar/node@10/10.16.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js add taro-ui/dist/style/index.scss --silent --no-progress
+  /usr/local/Cellar/node@10/10.16.0/bin/node /usr/local/Cellar/yarn/1.17.3/libexec/bin/yarn.js
 
 PATH: 
-  /usr/local/Cellar/node@10/10.16.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/mac/workspace/x-space/x-space2/node_modules/.bin:/var/folders/rq/yw2r9yfn07z4w8f7_k9fktl00000gn/T/yarn--1567091857738-0.6432328458786869:/Users/mac/workspace/x-space/x-space2/node_modules/.bin:/Users/mac/.config/yarn/link/node_modules/.bin:/usr/local/Cellar/node@10/10.16.0/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node@10/10.16.0/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/Cellar/node@10/10.16.0/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/opt/node@10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/opt/node@10/bin:/Users/mac/Library/Android/sdk/emulator:/Users/mac/Library/Android/sdk/tools:/Users/mac/Library/Android/sdk/platform-tools:/Users/mac/Library/Android/sdk/emulator:/Users/mac/Library/Android/sdk/tools:/Users/mac/Library/Android/sdk/platform-tools
+  /usr/local/opt/node@10/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/opt/node@10/bin:/Users/mac/Library/Android/sdk/emulator:/Users/mac/Library/Android/sdk/tools:/Users/mac/Library/Android/sdk/platform-tools:/Users/mac/Library/Android/sdk/emulator:/Users/mac/Library/Android/sdk/tools:/Users/mac/Library/Android/sdk/platform-tools
 
 Yarn version: 
   1.17.3
@@ -14,17 +14,17 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/taro-ui%2fdist/style/index.scss: Request "https://registry.yarnpkg.com/taro-ui%2fdist/style/index.scss" returned a 405
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66839:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:140464:22)
+  Error: https://registry.yarnpkg.com/@tarojs/redux-h5/-/redux-h5-1.3.16.tgz: Request failed "500 Internal Server Error"
+      at ResponseError.ExtendableBuiltin (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:696:66)
+      at new ResponseError (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:66900:16)
       at Request.emit (events.js:198:13)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141436:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141358:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1129:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+      at Request.module.exports.Request.onRequestResponse (/usr/local/Cellar/yarn/1.17.3/libexec/lib/cli.js:141341:10)
+      at ClientRequest.emit (events.js:203:15)
+      at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:556:21)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+      at TLSSocket.socketOnData (_http_client.js:442:20)
+      at TLSSocket.emit (events.js:198:13)
 
 npm manifest: 
   {
@@ -49,42 +49,43 @@ npm manifest:
   	"author": "",
   	"license": "MIT",
   	"dependencies": {
-  		"@tarojs/async-await": "1.3.15",
-  		"@tarojs/components": "1.3.15",
-  		"@tarojs/redux": "1.3.15",
-  		"@tarojs/redux-h5": "1.3.15",
-  		"@tarojs/router": "1.3.15",
-  		"@tarojs/taro": "1.3.15",
-  		"@tarojs/taro-alipay": "1.3.15",
-  		"@tarojs/taro-h5": "1.3.15",
-  		"@tarojs/taro-swan": "1.3.15",
-  		"@tarojs/taro-weapp": "1.3.15",
+  		"@tarojs/async-await": "1.3.16",
+  		"@tarojs/components": "1.3.16",
+  		"@tarojs/redux": "1.3.16",
+  		"@tarojs/redux-h5": "1.3.16",
+  		"@tarojs/router": "1.3.16",
+  		"@tarojs/taro": "1.3.16",
+  		"@tarojs/taro-alipay": "1.3.16",
+  		"@tarojs/taro-h5": "1.3.16",
+  		"@tarojs/taro-swan": "1.3.16",
+  		"@tarojs/taro-weapp": "1.3.16",
   		"dva-core": "^1.4.0",
   		"dva-loading": "^2.0.6",
   		"nervjs": "^1.4.4",
   		"redux": "^4.0.1",
   		"redux-logger": "^3.0.6",
-  		"redux-thunk": "^2.3.0"
+  		"redux-thunk": "^2.3.0",
+  		"taro-ui": "^2.2.2"
   	},
   	"devDependencies": {
+  		"@tarojs/plugin-babel": "1.3.16",
+  		"@tarojs/plugin-csso": "1.3.16",
+  		"@tarojs/plugin-sass": "1.3.16",
+  		"@tarojs/plugin-uglifyjs": "1.3.16",
+  		"@tarojs/webpack-runner": "1.3.16",
   		"@types/react": "^16.4.6",
   		"@types/webpack-env": "^1.13.6",
-  		"@tarojs/plugin-babel": "1.3.15",
-  		"@tarojs/plugin-csso": "1.3.15",
-  		"@tarojs/plugin-sass": "1.3.15",
-  		"@tarojs/plugin-uglifyjs": "1.3.15",
-  		"@tarojs/webpack-runner": "1.3.15",
+  		"babel-eslint": "^8.2.3",
   		"babel-plugin-transform-class-properties": "^6.24.1",
   		"babel-plugin-transform-decorators-legacy": "^1.3.4",
   		"babel-plugin-transform-jsx-stylesheet": "^0.6.5",
   		"babel-plugin-transform-object-rest-spread": "^6.26.0",
   		"babel-preset-env": "^1.6.1",
-  		"babel-eslint": "^8.2.3",
   		"eslint": "^4.19.1",
-  		"eslint-config-taro": "1.3.15",
-  		"eslint-plugin-react": "^7.8.2",
+  		"eslint-config-taro": "1.3.16",
   		"eslint-plugin-import": "^2.12.0",
-  		"eslint-plugin-taro": "1.3.15",
+  		"eslint-plugin-react": "^7.8.2",
+  		"eslint-plugin-taro": "1.3.16",
   		"eslint-plugin-typescript": "^0.12.0",
   		"typescript": "^3.0.1"
   	}
@@ -393,6 +394,14 @@ Lockfile:
   "@types/react@^16.4.6":
     version "16.7.11"
     resolved "http://registry.npm.taobao.org/@types/react/download/@types/react-16.7.11.tgz#1743b82ea6a0c659467f0c7317c233edb1f10be9"
+    dependencies:
+      "@types/prop-types" "*"
+      csstype "^2.2.0"
+  
+  "@types/react@^16.7.3":
+    version "16.9.2"
+    resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.2.tgz#6d1765431a1ad1877979013906731aae373de268"
+    integrity sha512-jYP2LWwlh+FTqGd9v7ynUKZzjj98T8x7Yclz479QdRhHfuW9yQ+0jjnD31eXSXutmBpppj5PYNLYLRfnZJvcfg==
     dependencies:
       "@types/prop-types" "*"
       csstype "^2.2.0"
@@ -1447,6 +1456,11 @@ Lockfile:
     version "1.12.0"
     resolved "http://registry.npm.taobao.org/binary-extensions/download/binary-extensions-1.12.0.tgz#c2d780f53d45bba8317a8902d4ceeaf3a6385b14"
   
+  bind-decorator@^1.0.11:
+    version "1.0.11"
+    resolved "https://registry.yarnpkg.com/bind-decorator/-/bind-decorator-1.0.11.tgz#e41bc06a1f65dd9cec476c91c5daf3978488252f"
+    integrity sha1-5BvAah9l3ZzsR2yRxdrzl4SIJS8=
+  
   block-stream@*:
     version "0.0.9"
     resolved "http://registry.npm.taobao.org/block-stream/download/block-stream-0.0.9.tgz#13ebfe778a03205cfe03751481ebb4b3300c126a"
@@ -1842,7 +1856,7 @@ Lockfile:
       isobject "^3.0.0"
       static-extend "^0.1.1"
   
-  classnames@^2.2.5:
+  classnames@^2.2.5, classnames@^2.2.6:
     version "2.2.6"
     resolved "http://registry.npm.taobao.org/classnames/download/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   
@@ -2274,6 +2288,11 @@ Lockfile:
   date-now@^0.1.4:
     version "0.1.4"
     resolved "http://registry.npm.taobao.org/date-now/download/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
+  
+  dayjs@^1.7.7:
+    version "1.8.16"
+    resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.16.tgz#2a3771de537255191b947957af2fd90012e71e64"
+    integrity sha512-XPmqzWz/EJiaRHjBqSJ2s6hE/BUoCIHKgdS2QPtTQtKcS9E4/Qn0WomoH1lXanWCzri+g7zPcuNV4aTZ8PMORQ==
   
   debug@*:
     version "4.1.0"
@@ -6571,6 +6590,18 @@ Lockfile:
       mkdirp "^0.5.0"
       safe-buffer "^5.1.2"
       yallist "^3.0.2"
+  
+  taro-ui@^2.2.2:
+    version "2.2.2"
+    resolved "https://registry.yarnpkg.com/taro-ui/-/taro-ui-2.2.2.tgz#485847ed2ac2343c394477b25bbea439e0adc03d"
+    integrity sha512-r6UDdmJ24T4pLTjQ7cxkn63uiZ2YXEHKFAdjDL8NvbJc8WreyJUymHs/zHqCE4gWktWYkv6L2O9x8G+s94vyfw==
+    dependencies:
+      "@types/react" "^16.7.3"
+      bind-decorator "^1.0.11"
+      classnames "^2.2.6"
+      dayjs "^1.7.7"
+      lodash "^4.17.10"
+      prop-types "^15.6.2"
   
   terser-webpack-plugin@^1.1.0:
     version "1.1.0"
