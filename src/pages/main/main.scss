@@ -1,0 +1,55 @@
+@import "../../assets/scss/variables";
+
+.page{
+  width: 100%;
+  min-height: 100vh;
+  background-color: green;
+}
+
+.#{$prefix} {
+
+  &-main-wrap {
+    width: 100%;
+    min-height: 100vh;
+    background-color: green;
+  }
+
+  &-main-text {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+  }
+
+  &-main-picker-container {
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 64px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+
+    &-left-text{
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    &-right-text{
+      font-size: 28px;
+      font-weight: normal;
+    }
+  }
+}
+
+.at-input{
+  &__title{
+    font-size: 32px;
+      font-weight: bold;
+  }
+}

@@ -8,6 +8,7 @@ import dva from './utils/dva'
 import models from './models'
 import './app.scss'
 import { globalData } from "./utils/common"
+import 'taro-ui/dist/style/index.scss'
 
 const dvaApp = dva.createApp({
   initialState: {},
@@ -19,6 +20,7 @@ const store = dvaApp.getStore();
 class App extends Component {
   config: Config = {
     pages: [
+      'pages/main/main',
       'pages/index/index'
     ],
     window: {
