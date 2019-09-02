@@ -6,7 +6,7 @@ taro + dva 示例
 
 ### 克隆到本地后
 ```
-cd taro-dva-master
+cd x-space
 npm install 
 npm run dev:weapp
 ```
