@@ -5,7 +5,7 @@ import { AtForm, AtInput, AtButton } from 'taro-ui'
 // import Api from '../../utils/request'
 // import Tips from '../../utils/tips'
 import { MainProps, MainState } from './main.interface'
-import {datas,dataTypes} from '../../utils/Score'
+import {datas,dataTypes,scoreCalculator} from '../../utils/Score'
 import './main.scss'
 // import {  } from '../../components'
 
@@ -84,6 +84,7 @@ class Main extends Component<MainProps,MainState > {
   _onChange = (key: string,e: any) => {
     const {inputValues} = this.state;
     inputValues.set(key,e.detail.value);
+    scoreCalculator.onDataChange({scoreItem: key,value: e.detail.value});
     this.setState({
       inputValues: inputValues,
     })
